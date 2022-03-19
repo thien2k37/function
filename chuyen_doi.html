@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--&lt;!&ndash;<input type="number" id="ip_vao" oninput="test(this.value)" onchange="test(this.value)">
+<select id="chon">
+    <option value="f">Foot to Meters</option>
+    <option value="m">Meters to Foot</option>
+</select>
+<h1 id="rs"></h1>
+<script>
+    let giDo = document.getElementById("input_vao");
+    let ch = document.getElementById("chon")
+    let rs = document.getElementById("rs");
+    function test() {
+        let LuaChon = ch.value;
+        let so = giDo.value;
+        if (LuaChon == "f") {
+            rs.innerHTML = FootToMeters(so);
+        }else {
+            rs.innerHTML = MeterToFoot(so);
+        }
+    }
+    function FootToMeters(foot) {
+        let  meter = 0.305 * foot;
+        return meter;
+    }
+    function MeterToFoot(meter) {
+        let  foot = 3.279 * meter;
+        return foot;
+    }
+</script>-->
+<p>
+    <label>MeterToFoot</label>
+    <input type="number" id="foot" oninput="MeterToFoot(this.value)" onchange="MeterToFoot(this.value)">
+    <input type="number" id="out_foot">
+</p>
+<br>
+<p>
+    <label>FootToMeters</label>
+    <input type="number" id="meter" oninput="FootToMeters(this.value)" onchange="FootToMeters(this.value)">
+    <input type="number" id="out_meter">
+</p>
+<script>
+    function MeterToFoot(meter) {
+        meter = parseFloat(meter);
+        document.getElementById("out_foot").value = 3.279 * meter;
+    }
+    function FootToMeters(foot) {
+        foot = parseFloat(foot);
+        document.getElementById("out_meter").value = 0.305 * foot;
+    }
+</script>
+</body>
+</html>
