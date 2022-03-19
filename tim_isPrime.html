@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input_vao">
+<input type="text" id="output_ra">
+<input type="button" onclick="check()">
+<script>
+    let input_vao = document.getElementById("input_vao");
+    let output_ra = document.getElementById("output_ra");
+    function check() {
+        let num = input_vao.value;
+        let xxxx = isPrime(num);b
+        output_ra.value = xxxx;
+    }
+    function isPrime(number) {
+        let xxx = "la so nguyen to";
+        for (let i = 2; i*i < number; i++) {
+            if (i % i == 0) {
+                check = "khong pahi so nguen to";
+                break;
+            }
+        }
+        return xxx;
+    }
+</script>
+</body>
+</html>
