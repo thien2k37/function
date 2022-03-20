@@ -6,8 +6,12 @@
 </head>
 <body>
 <script>
-    let arr = [1, 4, 5, 7, 8, 4, 9, 5, 3];
-   document.write(doi_so(arr + " "));
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        let a = +prompt("nhập phần tử vào mảng: ");
+        arr.push(a);
+    }
+    document.write(doi_so(arr + " "));
     function doi_so(x) {
         let a = [];
         for (let i = x.length -1; i >= 0; i--) {
