@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +parseInt(prompt("nhap vao kiem tra: "));
+    alert(check(a));
+    function check(x) {
+        let ky_tu = "khog phai so";
+        if (x / x == 1 || x - x == 0) {
+            ky_tu = "la so";
+        }
+        return ky_tu;
+    }
+</script>
+</body>
+</html>

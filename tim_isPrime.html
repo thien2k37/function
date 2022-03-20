@@ -6,19 +6,23 @@
 </head>
 <body>
 <script>
+
     function checkIsPrime(x) {
-        for (let i = 0; i < x; i++) {
-            if (x % 2 == 0) {
+        for (let i = 2; i*i <= x; i++) {
+            if (x % i == 0) {
                 return false;
             }
         }
         return true;
     }
+    let a = 0;
     for (let j = 2; j < 10000; j++) {
         if (checkIsPrime(j)){
-            document.write(j + "<br>");
+            document.write(j + ",");
+            a = a + 1;
         }
     }
+    document.write("<br>" + a);
 </script>
 </body>
 </html>

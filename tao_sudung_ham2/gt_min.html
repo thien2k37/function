@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = +parseInt(prompt("nhap vao a:"));
+  let b = +parseInt(prompt("nhap vao b"));
+  let c = +parseInt(prompt("nhap vao c"));
+  let gt = min(a,b,c);
+  document.write(gt);
+
+  function min(x, y, z) {
+      let min = x;
+      if (y < min && y < z) {
+          min = y;
+      }if (z < min && z < y){
+          min = z;
+      }
+      return min;
+  }
+</script>
+</body>
+</html>
