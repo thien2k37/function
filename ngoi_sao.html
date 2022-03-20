@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let check = prompt("check name : Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus");
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let viTri = arr1.indexOf(check);
+    if (viTri == -1) {
+        alert("khong tim thay");
+    }else {
+        alert(arr2[viTri]);
+    }
+</script>
+</body>
+</html>
