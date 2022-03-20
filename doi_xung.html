@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi = "abc1cba";
+    let check = "giong";
+    for (let i = 0; i < chuoi.length; i++){
+        if (chuoi[i] !== chuoi[chuoi.length - 1 -i]) {
+            check = "khong giong";
+            break;
+        }
+    }
+    alert(check);
+</script>
+</body>
+</html>
